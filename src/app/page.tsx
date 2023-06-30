@@ -2,10 +2,13 @@
 import { CreateSessionModal } from '@/components/CreateSessionModal'
 import { PrimaryButton } from '@/components/PrimaryButton'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
 
   const [isCreating, setIsCreating] = useState(false)
+
+  const { push } = useRouter()
 
   return (
     <div className="flex items-center bg-primary-100">
@@ -26,7 +29,7 @@ export default function Home() {
               <div className="w-full flex items-center justify-between">
                 <div className="flex-1">
                   <input
-                    className="w-full p-3 text-black bg-transparent border 
+                    className="w-full p-3 text-white bg-transparent border 
                   border-transparent appearance-none focus:border-slate-500 
                   focus:outline-none focus:ring-slate-500 
                  rounded-xl sm:text-sm" placeholder="Insira o código de uma sessão" type="text" />
@@ -35,7 +38,7 @@ export default function Home() {
                   text-white before:transition-colors
                  flex-none font-medium hover:bg-emerald-500 hover:text-white 
                  inline-flex justify-center lg:ml-4 outline-2 
-                 outline-offset-2 px-6 py-2.5 relative rounded-xl" type="submit">
+                 outline-offset-2 px-6 py-2.5 relative rounded-xl" onClick={() => push('/session')} type="button">
                   <span>Entrar</span>
                 </button>
               </div>
