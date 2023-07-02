@@ -6,7 +6,7 @@ interface IAvatarBarRootProps {
 
 export const InfoPlayerRoot = ({ children }: IAvatarBarRootProps) => {
   return (
-    <div className='flex items-center'>
+    <div className='flex items-center gap-1'>
       {children}
     </div>
   )
