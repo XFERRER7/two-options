@@ -1,6 +1,6 @@
 'use client'
 import { CreateSessionModal } from '@/components/CreateSessionModal'
-import { PrimaryButton } from '@/components/PrimaryButton'
+import { PrimaryButton } from '@/subcomponents/PrimaryButton'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 

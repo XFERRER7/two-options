@@ -2,7 +2,7 @@
 
 interface IPrimaryButtonProps {
   text: string
-  onClick: () => void
+  onClick?: () => void
 }
 
 export const PrimaryButton = ({ text, onClick }: IPrimaryButtonProps) => {

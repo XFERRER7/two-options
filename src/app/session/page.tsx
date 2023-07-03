@@ -1,3 +1,4 @@
+import { FormQuestion } from "@/components/FormQuestion";
 import { PlayersMenu } from "@/components/PlayersMenu";
 
 
@@ -10,12 +11,27 @@ export default function session() {
 
       <div className="w-full flex px-5 mt-3">
 
-        <PlayersMenu />
+        <div className="text-lg font-semibold tracking-tighter
+         text-white flex items-center justify-center mb-5">
+          <div className="mx-auto mr-4 font-semibold">
+            <span className="text-emerald-600">2</span>
+            <span className="font-mono text-white">OP</span>
+          </div>
+          <span className="inline-flex items-center text-lg">
+            Two options
+          </span>
+        </div>
 
         <h1 className="font-bold text-2xl mx-auto">
           Sessão da Ana
         </h1>
 
+      </div>
+
+      <PlayersMenu />
+
+      <div className="flex items-center justify-center px-2">
+        <FormQuestion />
       </div>
 
     </div>
