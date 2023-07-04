@@ -2,7 +2,7 @@ import { Input } from "@/subcomponents/Input"
 import { PrimaryButton } from "@/subcomponents/PrimaryButton"
 import { Option } from "./Option"
 
-export const FormQuestion = () => {
+export const FormQuestioner = () => {
   return (
     <div className="md:w-2/4 w-full mt-10 flex flex-col gap-5">
 

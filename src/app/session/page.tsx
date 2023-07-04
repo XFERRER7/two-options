@@ -1,4 +1,6 @@
-import { FormQuestion } from "@/components/FormQuestion";
+import { FormQuestioner } from "@/components/FormQuestioner";
+import { FormResponder } from "@/components/FormResponder";
+import { Option } from "@/components/Option";
 import { PlayersMenu } from "@/components/PlayersMenu";
 
 
@@ -8,6 +10,8 @@ export default function session() {
 
   return (
     <div className="flex flex-col min-h-screen bg-primary-100 py-2 text-white relative">
+
+
 
       <div className="w-full flex px-5 mt-3">
 
@@ -27,12 +31,18 @@ export default function session() {
         </h1>
 
       </div>
-
       <PlayersMenu />
 
+      {/* Questioner */}
+      {/* <div className="flex items-center justify-center px-2">
+        <FormQuestioner />
+      </div> */}
+
+      {/* Responder */}
       <div className="flex items-center justify-center px-2">
-        <FormQuestion />
+        <FormResponder />
       </div>
+
 
     </div>
   )
